@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+  var NovruzVaxti = {
+    NovruzGun: 21
+  }
+  var Tam_gun = 24;
+  var Tam_saat = 60;
+  var d = new Date();
+  var gun  = d.getDate();
+  var saat  = d.getHours();
+  var deqiqe = d.getMinutes();
+  var saniye = d.getSeconds();
+  function Gunler() {
+    document.write(NovruzVaxti.NovruzGun-gun);
+  }
+  function Saat(){
+    document.write(((NovruzVaxti.NovruzGun)*Tam_gun)-deqiqe);
+  }
+  function Saniye(){
+    document.write((((NovruzVaxti.NovruzGun)*Tam_gun)*Tam_saat)-saniye);
+  }
+  Gunler();
+  Saat();
+  Saniye();
+  //Burada:8 gun 452 saat  30197 saniye alindi.Hamisi bitisik oldu amma onlari
+  //nece ayiracagimi bilmedim:(
+</script>
+</body>
+</html>
